@@ -14,6 +14,7 @@
 		50D529991B848385006AAA2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D529981B848385006AAA2F /* Images.xcassets */; };
 		50D5299C1B848385006AAA2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D5299A1B848385006AAA2F /* LaunchScreen.xib */; };
 		50D529A81B848385006AAA2F /* My_Photo_GalleryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D529A71B848385006AAA2F /* My_Photo_GalleryTests.m */; };
+		50D529B31B849C8F006AAA2F /* MPGTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D529B21B849C8F006AAA2F /* MPGTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		50D529A11B848385006AAA2F /* My Photo GalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Photo GalleryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D529A61B848385006AAA2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D529A71B848385006AAA2F /* My_Photo_GalleryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_Photo_GalleryTests.m; sourceTree = "<group>"; };
+		50D529B11B849C8F006AAA2F /* MPGTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGTableViewCell.h; sourceTree = "<group>"; };
+		50D529B21B849C8F006AAA2F /* MPGTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				50D529921B848385006AAA2F /* MPGTableViewController.h */,
 				50D529931B848385006AAA2F /* MPGTableViewController.m */,
 				50D529951B848385006AAA2F /* Main.storyboard */,
+				50D529B11B849C8F006AAA2F /* MPGTableViewCell.h */,
+				50D529B21B849C8F006AAA2F /* MPGTableViewCell.m */,
 				50D529981B848385006AAA2F /* Images.xcassets */,
 				50D5299A1B848385006AAA2F /* LaunchScreen.xib */,
 				50D5298B1B848385006AAA2F /* Supporting Files */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D529B31B849C8F006AAA2F /* MPGTableViewCell.m in Sources */,
 				50D529941B848385006AAA2F /* MPGTableViewController.m in Sources */,
 				50D529911B848385006AAA2F /* AppDelegate.m in Sources */,
 				50D5298E1B848385006AAA2F /* main.m in Sources */,

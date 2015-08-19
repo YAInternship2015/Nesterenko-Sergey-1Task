@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="stZ-GX-nc7">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Table View Controller-->
@@ -13,10 +14,80 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CJe-cf-SHG">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" rowHeight="80" id="CJe-cf-SHG" customClass="MPGTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CJe-cf-SHG" id="Mnz-H2-Chf">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vx9-Zc-ltn">
+                                            <rect key="frame" x="8" y="2" width="75" height="75"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="75" id="2F9-Au-RD0"/>
+                                                <constraint firstAttribute="width" constant="75" id="unL-Fo-sPI"/>
+                                            </constraints>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="2F9-Au-RD0"/>
+                                                    <include reference="unL-Fo-sPI"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=regular">
+                                                <mask key="constraints">
+                                                    <include reference="2F9-Au-RD0"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="8" y="3" width="75" height="75"/>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="8" y="3" width="75" height="75"/>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmL-3k-qwo">
+                                            <rect key="frame" x="97" y="10" width="475" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="UnR-1h-awa">
+                                                    <variation key="widthClass=compact" constant="100"/>
+                                                </constraint>
+                                                <constraint firstAttribute="height" constant="60" id="fD9-HA-TBg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="UnR-1h-awa"/>
+                                                    <include reference="fD9-HA-TBg"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="zmL-3k-qwo" firstAttribute="leading" secondItem="Vx9-Zc-ltn" secondAttribute="trailing" constant="14" id="Ikj-eE-fmn"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="zmL-3k-qwo" secondAttribute="trailing" constant="20" id="JK0-bt-MCb">
+                                            <variation key="widthClass=compact" constant="14"/>
+                                        </constraint>
+                                        <constraint firstAttribute="centerY" secondItem="zmL-3k-qwo" secondAttribute="centerY" id="Uen-cH-hU4"/>
+                                        <constraint firstAttribute="centerY" secondItem="Vx9-Zc-ltn" secondAttribute="centerY" id="gmb-FB-jHT">
+                                            <variation key="widthClass=compact" constant="0.0"/>
+                                        </constraint>
+                                        <constraint firstItem="Vx9-Zc-ltn" firstAttribute="leading" secondItem="Mnz-H2-Chf" secondAttribute="leading" constant="8" id="qIb-2Y-Wad">
+                                            <variation key="widthClass=compact" constant="8"/>
+                                        </constraint>
+                                    </constraints>
+                                    <variation key="widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="Vx9-Zc-ltn"/>
+                                            <include reference="zmL-3k-qwo"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="Ikj-eE-fmn"/>
+                                            <include reference="JK0-bt-MCb"/>
+                                            <include reference="Uen-cH-hU4"/>
+                                            <include reference="gmb-FB-jHT"/>
+                                            <include reference="qIb-2Y-Wad"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
