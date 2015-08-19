@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MPGTableViewController.h
 //  My Photo Gallery
 //
 //  Created by Polykoi Rotenberg on 19/08/2015.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MPGTableViewController : UITableViewController
 
 
 @end

@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  MPGTableViewController.m
 //  My Photo Gallery
 //
 //  Created by Polykoi Rotenberg on 19/08/2015.
 //  Copyright (c) 2015 Polykoi Rotenberg. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MPGTableViewController.h"
 
-@interface ViewController ()
+@interface MPGTableViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MPGTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
