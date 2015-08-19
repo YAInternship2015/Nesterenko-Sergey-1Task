@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MPGTableViewCell.h"
+#import "MPGGallery.h"
 
 @interface MPGTableViewController : UITableViewController
 

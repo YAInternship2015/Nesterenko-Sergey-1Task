@@ -8,7 +8,7 @@
 
 #import "MPGTableViewController.h"
 
-@interface MPGTableViewController ()
+@interface MPGTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -23,5 +23,22 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[MPGGallery sharedInstance] getGalleryItemsCount];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"cellIdentifier";
+    MPGTableViewCell *cell = (MPGTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    cell.titleLabel.text = [[[MPGGallery sharedInstance] getGalleryContentAtIndex:[indexPath row]] title];
+    cell.thumbnailImageView.image = [UIImage imageNamed:[[[MPGGallery sharedInstance] getGalleryContentAtIndex:[indexPath row]] imageFileName]];
+    
+    return cell;
+}
+
+
+
 
 @end

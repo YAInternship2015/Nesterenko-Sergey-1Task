@@ -12,16 +12,6 @@
 
 NSArray *photos;
 
-    
-+ (MPGGallery *)sharedInstance {
-    static MPGGallery *_sharedInstance;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _sharedInstance = [MPGGallery init];
-    });
-    return _sharedInstance;
-}
-
 - (id)init {
     self = [super init];
     if (self) {
@@ -30,7 +20,7 @@ NSArray *photos;
         MPGPhoto *photo2 = [[MPGPhoto alloc] initWithTitle:@"Long Dock" imageFileName:@"Long-dock.jpg"];
         MPGPhoto *photo3 = [[MPGPhoto alloc] initWithTitle:@"Long Exit" imageFileName:@"Long-exit.jpg"];
         MPGPhoto *photo4 = [[MPGPhoto alloc] initWithTitle:@"Old Man" imageFileName:@"Old-man.jpg"];
-        MPGPhoto *photo5 = [[MPGPhoto alloc] initWithTitle:@"Road" imageFileName:@"Road.jpg"];
+        MPGPhoto *photo5 = [[MPGPhoto alloc] initWithTitle:@"Road" imageFileName:@"Road.jpeg"];
         MPGPhoto *photo6 = [[MPGPhoto alloc] initWithTitle:@"Seats" imageFileName:@"seats.jpg"];
         MPGPhoto *photo7 = [[MPGPhoto alloc] initWithTitle:@"Skater" imageFileName:@"Skater.jpg"];
         MPGPhoto *photo8 = [[MPGPhoto alloc] initWithTitle:@"Trees In The Lake" imageFileName:@"Trees-in-the-lake.jpg"];
@@ -39,5 +29,23 @@ NSArray *photos;
     }
     return self;
 }
+    
++ (MPGGallery *)sharedInstance {
+    static MPGGallery *_sharedInstance = nil;
+    static dispatch_once_t oncePredicate;
+    dispatch_once(&oncePredicate, ^{
+        _sharedInstance = [[MPGGallery alloc] init];
+    });
+    return _sharedInstance;
+}
+
+- (MPGPhoto *)getGalleryContentAtIndex:(NSInteger)index {
+    return photos[index];
+}
+
+- (NSInteger)getGalleryItemsCount {
+    return photos.count;
+}
+
 
 @end

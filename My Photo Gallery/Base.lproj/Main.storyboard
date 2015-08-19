@@ -21,6 +21,7 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vx9-Zc-ltn">
                                             <rect key="frame" x="8" y="2" width="75" height="75"/>
+                                            <accessibility key="accessibilityConfiguration" label=""/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="75" id="2F9-Au-RD0"/>
                                                 <constraint firstAttribute="width" constant="75" id="unL-Fo-sPI"/>
@@ -89,6 +90,10 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="thumbnailImageView" destination="Vx9-Zc-ltn" id="PZi-Ii-FZE"/>
+                                    <outlet property="titleLabel" destination="zmL-3k-qwo" id="4eS-Oj-Ib7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

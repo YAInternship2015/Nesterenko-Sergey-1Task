@@ -12,5 +12,7 @@
 @interface MPGGallery : NSObject
 
 + (MPGGallery *)sharedInstance;
+- (MPGPhoto *)getGalleryContentAtIndex:(NSInteger)index;
+- (NSInteger)getGalleryItemsCount;
 
 @end
