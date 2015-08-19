@@ -14,5 +14,4 @@
 @property (nonatomic, weak) NSString *imageFileName;
 
 - (id)initWithTitle:(NSString *)title imageFileName:(NSString *)imageFileName;
-
 @end

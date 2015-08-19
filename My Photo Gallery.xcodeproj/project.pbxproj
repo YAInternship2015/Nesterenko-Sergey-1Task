@@ -16,6 +16,17 @@
 		50D529A81B848385006AAA2F /* My_Photo_GalleryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D529A71B848385006AAA2F /* My_Photo_GalleryTests.m */; };
 		50D529B31B849C8F006AAA2F /* MPGTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D529B21B849C8F006AAA2F /* MPGTableViewCell.m */; };
 		50D529B61B84B846006AAA2F /* MPGPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D529B51B84B846006AAA2F /* MPGPhoto.m */; };
+		50D529B91B84BBF6006AAA2F /* MPGGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D529B81B84BBF6006AAA2F /* MPGGallery.m */; };
+		50D529D91B84DB13006AAA2F /* Camera-in-the-roses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50D529CF1B84DB13006AAA2F /* Camera-in-the-roses.jpg */; };
+		50D529DA1B84DB13006AAA2F /* Long-dock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50D529D01B84DB13006AAA2F /* Long-dock.jpg */; };
+		50D529DB1B84DB13006AAA2F /* Long-exit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50D529D11B84DB13006AAA2F /* Long-exit.jpg */; };
+		50D529DC1B84DB13006AAA2F /* Moon-phases.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50D529D21B84DB13006AAA2F /* Moon-phases.jpg */; };
+		50D529DD1B84DB13006AAA2F /* Old-man.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50D529D31B84DB13006AAA2F /* Old-man.jpg */; };
+		50D529DE1B84DB13006AAA2F /* Road.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 50D529D41B84DB13006AAA2F /* Road.jpeg */; };
+		50D529DF1B84DB13006AAA2F /* seats.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50D529D51B84DB13006AAA2F /* seats.jpg */; };
+		50D529E01B84DB13006AAA2F /* Skater.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50D529D61B84DB13006AAA2F /* Skater.jpg */; };
+		50D529E11B84DB13006AAA2F /* Trees-in-the-lake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50D529D71B84DB13006AAA2F /* Trees-in-the-lake.jpg */; };
+		50D529E21B84DB13006AAA2F /* Windows-behind-the-tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50D529D81B84DB13006AAA2F /* Windows-behind-the-tree.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +57,18 @@
 		50D529B21B849C8F006AAA2F /* MPGTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGTableViewCell.m; sourceTree = "<group>"; };
 		50D529B41B84B846006AAA2F /* MPGPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGPhoto.h; sourceTree = "<group>"; };
 		50D529B51B84B846006AAA2F /* MPGPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGPhoto.m; sourceTree = "<group>"; };
+		50D529B71B84BBF6006AAA2F /* MPGGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGGallery.h; sourceTree = "<group>"; };
+		50D529B81B84BBF6006AAA2F /* MPGGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGGallery.m; sourceTree = "<group>"; };
+		50D529CF1B84DB13006AAA2F /* Camera-in-the-roses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Camera-in-the-roses.jpg"; sourceTree = "<group>"; };
+		50D529D01B84DB13006AAA2F /* Long-dock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Long-dock.jpg"; sourceTree = "<group>"; };
+		50D529D11B84DB13006AAA2F /* Long-exit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Long-exit.jpg"; sourceTree = "<group>"; };
+		50D529D21B84DB13006AAA2F /* Moon-phases.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Moon-phases.jpg"; sourceTree = "<group>"; };
+		50D529D31B84DB13006AAA2F /* Old-man.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Old-man.jpg"; sourceTree = "<group>"; };
+		50D529D41B84DB13006AAA2F /* Road.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Road.jpeg; sourceTree = "<group>"; };
+		50D529D51B84DB13006AAA2F /* seats.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seats.jpg; sourceTree = "<group>"; };
+		50D529D61B84DB13006AAA2F /* Skater.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Skater.jpg; sourceTree = "<group>"; };
+		50D529D71B84DB13006AAA2F /* Trees-in-the-lake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Trees-in-the-lake.jpg"; sourceTree = "<group>"; };
+		50D529D81B84DB13006AAA2F /* Windows-behind-the-tree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Windows-behind-the-tree.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +110,8 @@
 		50D5298A1B848384006AAA2F /* My Photo Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				50D529B71B84BBF6006AAA2F /* MPGGallery.h */,
+				50D529B81B84BBF6006AAA2F /* MPGGallery.m */,
 				50D5298F1B848385006AAA2F /* AppDelegate.h */,
 				50D529901B848385006AAA2F /* AppDelegate.m */,
 				50D529921B848385006AAA2F /* MPGTableViewController.h */,
@@ -98,6 +123,7 @@
 				50D529B21B849C8F006AAA2F /* MPGTableViewCell.m */,
 				50D529981B848385006AAA2F /* Images.xcassets */,
 				50D5299A1B848385006AAA2F /* LaunchScreen.xib */,
+				50D529BA1B84D893006AAA2F /* Photos Source */,
 				50D5298B1B848385006AAA2F /* Supporting Files */,
 			);
 			path = "My Photo Gallery";
@@ -127,6 +153,23 @@
 				50D529A61B848385006AAA2F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50D529BA1B84D893006AAA2F /* Photos Source */ = {
+			isa = PBXGroup;
+			children = (
+				50D529D21B84DB13006AAA2F /* Moon-phases.jpg */,
+				50D529CF1B84DB13006AAA2F /* Camera-in-the-roses.jpg */,
+				50D529D01B84DB13006AAA2F /* Long-dock.jpg */,
+				50D529D11B84DB13006AAA2F /* Long-exit.jpg */,
+				50D529D31B84DB13006AAA2F /* Old-man.jpg */,
+				50D529D41B84DB13006AAA2F /* Road.jpeg */,
+				50D529D51B84DB13006AAA2F /* seats.jpg */,
+				50D529D61B84DB13006AAA2F /* Skater.jpg */,
+				50D529D71B84DB13006AAA2F /* Trees-in-the-lake.jpg */,
+				50D529D81B84DB13006AAA2F /* Windows-behind-the-tree.jpg */,
+			);
+			name = "Photos Source";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +253,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				50D529971B848385006AAA2F /* Main.storyboard in Resources */,
+				50D529DE1B84DB13006AAA2F /* Road.jpeg in Resources */,
 				50D5299C1B848385006AAA2F /* LaunchScreen.xib in Resources */,
+				50D529E21B84DB13006AAA2F /* Windows-behind-the-tree.jpg in Resources */,
+				50D529E11B84DB13006AAA2F /* Trees-in-the-lake.jpg in Resources */,
+				50D529DD1B84DB13006AAA2F /* Old-man.jpg in Resources */,
+				50D529DF1B84DB13006AAA2F /* seats.jpg in Resources */,
+				50D529DC1B84DB13006AAA2F /* Moon-phases.jpg in Resources */,
+				50D529D91B84DB13006AAA2F /* Camera-in-the-roses.jpg in Resources */,
+				50D529DB1B84DB13006AAA2F /* Long-exit.jpg in Resources */,
 				50D529991B848385006AAA2F /* Images.xcassets in Resources */,
+				50D529DA1B84DB13006AAA2F /* Long-dock.jpg in Resources */,
+				50D529E01B84DB13006AAA2F /* Skater.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50D529B61B84B846006AAA2F /* MPGPhoto.m in Sources */,
+				50D529B91B84BBF6006AAA2F /* MPGGallery.m in Sources */,
 				50D529B31B849C8F006AAA2F /* MPGTableViewCell.m in Sources */,
 				50D529941B848385006AAA2F /* MPGTableViewController.m in Sources */,
 				50D529911B848385006AAA2F /* AppDelegate.m in Sources */,
