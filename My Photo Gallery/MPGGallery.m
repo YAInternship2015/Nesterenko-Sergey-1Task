@@ -12,6 +12,7 @@
 
 NSArray *photos;
 
+#pragma mark -$init method
 - (id)init {
     self = [super init];
     if (self) {
@@ -29,7 +30,8 @@ NSArray *photos;
     }
     return self;
 }
-    
+
+#pragma mark -$shared instance creation/invocation
 + (MPGGallery *)sharedInstance {
     static MPGGallery *_sharedInstance = nil;
     static dispatch_once_t oncePredicate;
@@ -39,6 +41,7 @@ NSArray *photos;
     return _sharedInstance;
 }
 
+#pragma mark -$data access methods
 - (MPGPhoto *)getGalleryContentAtIndex:(NSInteger)index {
     return photos[index];
 }

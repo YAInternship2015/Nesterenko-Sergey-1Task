@@ -24,6 +24,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -$UITableViewDataSource protocol methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [[MPGGallery sharedInstance] getGalleryItemsCount];
 }
@@ -37,8 +38,5 @@
     
     return cell;
 }
-
-
-
 
 @end

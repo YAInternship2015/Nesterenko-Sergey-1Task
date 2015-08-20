@@ -27,6 +27,7 @@
 		50D529E01B84DB13006AAA2F /* Skater.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50D529D61B84DB13006AAA2F /* Skater.jpg */; };
 		50D529E11B84DB13006AAA2F /* Trees-in-the-lake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50D529D71B84DB13006AAA2F /* Trees-in-the-lake.jpg */; };
 		50D529E21B84DB13006AAA2F /* Windows-behind-the-tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50D529D81B84DB13006AAA2F /* Windows-behind-the-tree.jpg */; };
+		50D529E71B868C17006AAA2F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 50D529E61B868C16006AAA2F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		50D529D61B84DB13006AAA2F /* Skater.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Skater.jpg; sourceTree = "<group>"; };
 		50D529D71B84DB13006AAA2F /* Trees-in-the-lake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Trees-in-the-lake.jpg"; sourceTree = "<group>"; };
 		50D529D81B84DB13006AAA2F /* Windows-behind-the-tree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Windows-behind-the-tree.jpg"; sourceTree = "<group>"; };
+		50D529E61B868C16006AAA2F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		50D5297F1B848384006AAA2F = {
 			isa = PBXGroup;
 			children = (
+				50D529E61B868C16006AAA2F /* README.md */,
 				50D5298A1B848384006AAA2F /* My Photo Gallery */,
 				50D529A41B848385006AAA2F /* My Photo GalleryTests */,
 				50D529891B848384006AAA2F /* Products */,
@@ -110,19 +113,12 @@
 		50D5298A1B848384006AAA2F /* My Photo Gallery */ = {
 			isa = PBXGroup;
 			children = (
-				50D529B71B84BBF6006AAA2F /* MPGGallery.h */,
-				50D529B81B84BBF6006AAA2F /* MPGGallery.m */,
+				50D529E31B868812006AAA2F /* Model */,
 				50D5298F1B848385006AAA2F /* AppDelegate.h */,
 				50D529901B848385006AAA2F /* AppDelegate.m */,
-				50D529921B848385006AAA2F /* MPGTableViewController.h */,
-				50D529931B848385006AAA2F /* MPGTableViewController.m */,
-				50D529B41B84B846006AAA2F /* MPGPhoto.h */,
-				50D529B51B84B846006AAA2F /* MPGPhoto.m */,
-				50D529951B848385006AAA2F /* Main.storyboard */,
-				50D529B11B849C8F006AAA2F /* MPGTableViewCell.h */,
-				50D529B21B849C8F006AAA2F /* MPGTableViewCell.m */,
+				50D529E51B86889B006AAA2F /* Controller */,
+				50D529E41B86883E006AAA2F /* View */,
 				50D529981B848385006AAA2F /* Images.xcassets */,
-				50D5299A1B848385006AAA2F /* LaunchScreen.xib */,
 				50D529BA1B84D893006AAA2F /* Photos Source */,
 				50D5298B1B848385006AAA2F /* Supporting Files */,
 			);
@@ -170,6 +166,37 @@
 				50D529D81B84DB13006AAA2F /* Windows-behind-the-tree.jpg */,
 			);
 			name = "Photos Source";
+			sourceTree = "<group>";
+		};
+		50D529E31B868812006AAA2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50D529B71B84BBF6006AAA2F /* MPGGallery.h */,
+				50D529B81B84BBF6006AAA2F /* MPGGallery.m */,
+				50D529B41B84B846006AAA2F /* MPGPhoto.h */,
+				50D529B51B84B846006AAA2F /* MPGPhoto.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		50D529E41B86883E006AAA2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50D529951B848385006AAA2F /* Main.storyboard */,
+				50D529B11B849C8F006AAA2F /* MPGTableViewCell.h */,
+				50D529B21B849C8F006AAA2F /* MPGTableViewCell.m */,
+				50D5299A1B848385006AAA2F /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		50D529E51B86889B006AAA2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50D529921B848385006AAA2F /* MPGTableViewController.h */,
+				50D529931B848385006AAA2F /* MPGTableViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +312,7 @@
 				50D529B61B84B846006AAA2F /* MPGPhoto.m in Sources */,
 				50D529B91B84BBF6006AAA2F /* MPGGallery.m in Sources */,
 				50D529B31B849C8F006AAA2F /* MPGTableViewCell.m in Sources */,
+				50D529E71B868C17006AAA2F /* README.md in Sources */,
 				50D529941B848385006AAA2F /* MPGTableViewController.m in Sources */,
 				50D529911B848385006AAA2F /* AppDelegate.m in Sources */,
 				50D5298E1B848385006AAA2F /* main.m in Sources */,

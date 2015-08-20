@@ -10,6 +10,7 @@
 
 @implementation MPGPhoto
 
+#pragma mark -$init method
 - (id) initWithTitle:(NSString *)title imageFileName:(NSString *)imageFileName {
     self = [super init];
     if (self) {
